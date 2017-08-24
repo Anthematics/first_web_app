@@ -1,0 +1,8 @@
+<h1> these are my 4 favorite websites! </h1>
+
+	<ul>
+		<% @fav_links.each do|favoritelink| %>
+		<li> <a href="<%=favoritelink%>">  <%=favoritelink%> </a> </li>
+		<%end%>
+	</ul>
+<!-- In that view, iterate through @fav_links and display each link as an <a> tag. -->
